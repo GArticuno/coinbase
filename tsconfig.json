@@ -21,14 +21,6 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "incremental": true
-    // "paths": {
-    //   "@components/*": [
-    //     "./components/*"
-    //   ],
-    //   "@styles/*": [
-    //     "./styles/*"
-    //   ]
-    // }
   },
   "include": [
     "./src",

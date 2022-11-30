@@ -6,6 +6,9 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "eslint:recommended",
+    "next",
     "airbnb",
     "prettier"
   ],
