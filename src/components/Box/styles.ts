@@ -12,10 +12,12 @@ export const BoxContainer = styled.div<BoxLayoutProps>`
   width: 100%:
   height: 100%;
   background: #ffffff;
+
   border: 1px solid;
   border-radius: 10px;
   border-weight: 1px;
   border-color: #f0f0f0;
+
   padding: ${({ padding }) => (padding ? `${padding}px` : '1.2rem')};
   padding-top: ${({ paddingTop }) => paddingTop}px;
   padding-bottom: ${({ paddingBottom }) => paddingBottom}px;

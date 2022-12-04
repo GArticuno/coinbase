@@ -1,6 +1,7 @@
 import { Card, Layout, Typography } from 'components';
+import PercentBar from 'components/PercentBar';
 import Image from 'next/image';
-import { AiFillCaretUp } from 'react-icons/ai';
+import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
 import { FlexBox, GraphDesc, Grid, PercentText, RightButton, TitleBox } from './styles';
 
@@ -25,7 +26,7 @@ const Overview = () => (
     </TitleBox>
     <Grid>
       <Card>
-        <Image src='/assets/mocks-image/graph-pink.svg' alt='graph-pink' width={115} height={124} />
+        <PercentBar percent={70} text='15000' />
         <GraphDesc>
           <Typography fontWeight='bold'>Total Number Of Transaction</Typography>
           <FlexBox>
@@ -45,15 +46,15 @@ const Overview = () => (
         </GraphDesc>
       </Card>
       <Card>
-        <Image src='/assets/mocks-image/graph-pink.svg' alt='graph-pink' width={115} height={124} />
+        <PercentBar percent={50} text='43498' />
         <GraphDesc>
-          <Typography fontWeight='bold'>Total Number Of Transaction</Typography>
+          <Typography fontWeight='bold'>Total Number Of Trade</Typography>
           <FlexBox>
             <PercentText>
               <Typography fontSize='s' variant='tertiary'>
-                22.18%
+                11.8%
               </Typography>
-              <AiFillCaretUp color='#1cd1a1' size={7} />
+              <AiFillCaretDown color='#1cd1a1' size={7} />
             </PercentText>
             <Image
               src='/assets/mocks-image/graph-green.svg'
@@ -65,15 +66,15 @@ const Overview = () => (
         </GraphDesc>
       </Card>
       <Card>
-        <Image src='/assets/mocks-image/graph-pink.svg' alt='graph-pink' width={115} height={124} />
+        <PercentBar percent={87} text='87%' />
         <GraphDesc>
-          <Typography fontWeight='bold'>Total Number Of Transaction</Typography>
+          <Typography fontWeight='bold'>Market Rate Value</Typography>
           <FlexBox>
             <PercentText>
               <Typography fontSize='s' variant='tertiary'>
-                22.18%
+                11.8%
               </Typography>
-              <AiFillCaretUp color='#1cd1a1' size={7} />
+              <AiFillCaretDown color='#1cd1a1' size={7} />
             </PercentText>
             <Image
               src='/assets/mocks-image/graph-green.svg'

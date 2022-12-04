@@ -28,7 +28,7 @@ const Layout = ({ children, page }: LayoutProps) => (
           <Typography fontSize='s'>Ramon Ridwan</Typography>
         </LayoutHeaderProfile>
         <LayoutHeaderNotification>
-          <IoMdNotificationsOutline size={20} />
+          <IoMdNotificationsOutline size={24} />
         </LayoutHeaderNotification>
       </LayoutHeaderBox>
     </LayoutHeader>
