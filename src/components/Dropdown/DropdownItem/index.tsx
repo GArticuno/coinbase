@@ -19,7 +19,7 @@ const DropdownItem = ({ item, index, length }: DropdownItemProps) => {
         onMouseOut={onChangeColor}
         onClick={item.onPress}
       >
-        <Typography variant={changeColor ? 'white' : 'primary'} fontSize='s'>
+        <Typography variant={changeColor ? 'contrast' : 'primary'} fontSize='s'>
           {item.name}
         </Typography>
       </Item>
