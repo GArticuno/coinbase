@@ -30,7 +30,7 @@ export const LayoutHeaderProfile = styled.div`
 
 export const LayoutHeaderNotification = styled.div`
   cursor: pointer;
-  color: #858585;
+  color: ${({ theme }) => theme.text.primary};
   transition: 0.2s;
   &:hover {
     opacity: 0.5;
@@ -43,8 +43,8 @@ export const LayoutContainer = styled.div`
 `;
 
 export const LayoutDashboard = styled.div<{ height: number }>`
-  background-color: #ffffff;
-  border: 1px solid #f0f0f0;
+  background-color: ${({ theme }) => theme.background.color.primary}
+  border: 1px solid ${({ theme }) => theme.background.border}
   border-top: 0;
   height: ${({ height }) => height}px;
   width: 290px;
@@ -58,7 +58,10 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
   align-items: center;
   gap: 1.2rem;
   padding: 1rem 3.475rem;
-  background: ${({ page, id }) => (page === id ? 'linear-gradient(#FD749B, #281AC8)' : '#ffffff')};
+  background: ${({ page, id, theme }) =>
+    page === id
+      ? `linear-gradient(${theme.gradient.default.head}, ${theme.gradient.default.tail})`
+      : theme.background.color.primary};
   border-radius: 0 100px 100px 0;
   cursor: pointer;
   transition: 0.2s;
@@ -69,6 +72,6 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
 
 export const LayoutContainerChildren = styled.div`
   padding: 3rem 4rem;
-  background-color: #fff9fe;
+  background-color: ${({ theme }) => theme.background.color.secondary};
   width: 100%;
 `;

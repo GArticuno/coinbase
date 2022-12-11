@@ -1,3 +1,5 @@
+import { BoxLayoutProps } from 'components/Box/types';
+
 export type CardProps = {
-  children: React.ReactNode[];
-};
+  children: React.ReactNode | React.ReactNode[];
+} & BoxLayoutProps;

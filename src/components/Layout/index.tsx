@@ -42,7 +42,7 @@ const Layout = ({ children, page }: LayoutProps) => (
               width={item.image.width}
               height={item.image.height}
             />
-            <Typography fontSize='s' variant={page === item.id ? 'white' : 'primary'}>
+            <Typography fontSize='s' variant={page === item.id ? 'contrast' : 'primary'}>
               {item.name}
             </Typography>
           </LayoutDashboardButton>

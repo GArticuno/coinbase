@@ -1,18 +1,13 @@
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
+import { light } from 'styles';
 
 import GLobalStyle from '../styles/global';
-
-const theme = {
-  colors: {
-    primary: '#fb2943',
-  },
-};
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <GLobalStyle />
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={light}>
       <Component {...pageProps} />
     </ThemeProvider>
   </>

@@ -6,7 +6,18 @@ import Dropdown from '../Dropdown';
 import { DropdownButton, DropdownContainer } from './styles';
 import { CardProps } from './types';
 
-const Card = ({ children }: CardProps) => {
+const Card = ({
+  children,
+  flexDirection = 'row',
+  alignItems = 'center',
+  display = 'flex',
+  justifyContent = 'center',
+  position = 'relative',
+  gap = 16,
+  padding = 25,
+  paddingRight = 41,
+  ...props
+}: CardProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const onSwitch = () => {
@@ -15,14 +26,15 @@ const Card = ({ children }: CardProps) => {
 
   return (
     <Box
-      display='flex'
-      flexDirection='row'
-      justifyContent='center'
-      alignItems='center'
-      position='relative'
-      gap={16}
-      padding={25}
-      paddingRight={41}
+      display={display}
+      flexDirection={flexDirection}
+      justifyContent={justifyContent}
+      alignItems={alignItems}
+      position={position}
+      gap={gap}
+      padding={padding}
+      paddingRight={paddingRight}
+      {...props}
     >
       <DropdownContainer>
         <DropdownButton onClick={onSwitch}>

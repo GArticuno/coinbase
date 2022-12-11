@@ -9,8 +9,13 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   align-items: center;
   border-radius: 100px;
   padding: 1.1px;
-  background: ${({ variant }) =>
-    variant === 'primary' ? 'linear-gradient(#FD749B, #281AC8)' : '#f0f0f0'};
+  background: ${({ variant, theme }) =>
+    variant === 'primary'
+      ? `linear-gradient(
+      ${theme.gradient.default.head},
+      ${theme.gradient.default.tail}
+    )`
+      : theme.background.border};
 `;
 
 export const InputContainer = styled.div`
@@ -20,11 +25,11 @@ export const InputContainer = styled.div`
   align-items: center;
   border-radius: 100px;
   padding: 0.5rem 1rem;
-  background: #ffffff;
+  background: ${({ theme }) => theme.background.color.primary};
 `;
 
 export const InputStyled = styled.input`
-  color: #858585;
+  color: ${({ theme }) => theme.text.primary};
   font-size: 0.75rem;
   border: none;
   margin: 0rem 0.5rem;

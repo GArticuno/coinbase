@@ -8,4 +8,10 @@ export default createGlobalStyle`
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
   }
+
+  @media(max-width: 1400px){
+    html {
+      font-size: 87%;
+    }
+  }
 `;

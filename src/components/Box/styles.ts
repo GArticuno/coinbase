@@ -9,14 +9,14 @@ export const BoxContainer = styled.div<BoxLayoutProps>`
   align-items: ${({ alignItems }) => alignItems};
   position: ${({ position }) => position};
   gap: ${({ gap }) => gap}px;
-  width: 100%:
-  height: 100%;
-  background: #ffffff;
+  width: 100%;
+  height: auto;
+  background: ${({ theme }) => theme.background.color.primary};
 
   border: 1px solid;
   border-radius: 10px;
   border-weight: 1px;
-  border-color: #f0f0f0;
+  border-color: ${({ theme }) => theme.background.border};
 
   padding: ${({ padding }) => (padding ? `${padding}px` : '1.2rem')};
   padding-top: ${({ paddingTop }) => paddingTop}px;
