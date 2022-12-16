@@ -1,4 +1,4 @@
-import { Card, Icon, Layout, PercentBar, Typography } from 'components';
+import { Card, Icon, Layout, PercentBar, TitleBox, Typography, WalletCard } from 'components';
 import Image from 'next/image';
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 import { BiRightArrowAlt } from 'react-icons/bi';
@@ -6,7 +6,6 @@ import { useTheme } from 'styled-components';
 
 import { cards } from './constants';
 import {
-  CardDesc,
   CardList,
   ConversionContainer,
   FlexBox,
@@ -14,7 +13,6 @@ import {
   Grid,
   PercentText,
   RightButton,
-  TitleBox,
 } from './styles';
 
 const Overview = () => {
@@ -116,10 +114,10 @@ const Overview = () => {
                   {item.card_title}
                 </Typography>
                 {item.transactions.map((transaction) => (
-                  <CardDesc>
+                  <TitleBox>
                     <Typography fontSize='s'>{transaction.name}</Typography>
                     <Typography fontSize='s'>{transaction.value}</Typography>
-                  </CardDesc>
+                  </TitleBox>
                 ))}
               </CardList>
             ))}
@@ -129,6 +127,7 @@ const Overview = () => {
           </Icon>
         </ConversionContainer>
       </Card>
+      <WalletCard />
     </Layout>
   );
 };

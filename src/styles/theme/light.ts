@@ -5,8 +5,9 @@ const light: DefaultTheme = {
     primary: '#858585',
     secondary: '#fd749b',
     tertiary: '#1cd1a1',
-    success: '#000000',
-    error: '#000000',
+    quartenary: '#B327F5',
+    success: '#5DF888',
+    error: '#F85D5D',
     contrast: '#ffffff',
     percent: '#faa9c6',
   },
@@ -18,9 +19,13 @@ const light: DefaultTheme = {
     border: '#f0f0f0',
   },
   gradient: {
-    default: {
+    primary: {
       head: '#FD749B',
       tail: '#281AC8',
+    },
+    secondary: {
+      head: '#FC58B3',
+      tail: '#FEAE68',
     },
   },
   font: {

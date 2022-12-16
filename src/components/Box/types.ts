@@ -1,3 +1,5 @@
+import { BackgroundColorProps } from 'styled-components';
+
 export type BoxLayoutProps = {
   display?: string;
   flexDirection?: string;
@@ -15,6 +17,10 @@ export type BoxLayoutProps = {
   marginBottom?: number;
   marginLeft?: number;
   marginRight?: number;
+  isGradientBackground?: boolean;
+  background?: keyof BackgroundColorProps;
+  hasBorder?: boolean;
+  maxWidth?: number;
 };
 
 export type BoxProps = {

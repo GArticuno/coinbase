@@ -14,7 +14,7 @@ const PercentBar = ({ percent, size = 120, text }: PercentBarProps) => {
         width={size}
         strokeWidth={10}
         fontColor={theme.background.color.primary}
-        primaryColor={[theme.gradient.default.head, theme.gradient.default.tail]}
+        primaryColor={[theme.gradient.primary.head, theme.gradient.primary.tail]}
         secondaryColor={theme.text.percent}
       />
       <TextContainer size={size}>

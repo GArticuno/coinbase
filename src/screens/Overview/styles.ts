@@ -8,15 +8,6 @@ export const FlexBox = styled.div`
   gap: 1rem;
 `;
 
-export const TitleBox = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-`;
-
 export const RightButton = styled.div`
   text-align: end;
   align-self: end;
@@ -53,8 +44,6 @@ export const ConversionContainer = styled.div`
   width: 100%;
   margin-top: 1.5rem;
 `;
-
-export const CardDesc = styled(TitleBox)``;
 
 export const CardList = styled(GraphDesc)`
   width: 100%;

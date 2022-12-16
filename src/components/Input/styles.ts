@@ -12,8 +12,8 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   background: ${({ variant, theme }) =>
     variant === 'primary'
       ? `linear-gradient(
-      ${theme.gradient.default.head},
-      ${theme.gradient.default.tail}
+      ${theme.gradient.primary.head},
+      ${theme.gradient.primary.tail}
     )`
       : theme.background.border};
 `;

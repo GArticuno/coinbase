@@ -60,7 +60,7 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
   padding: 1rem 3.475rem;
   background: ${({ page, id, theme }) =>
     page === id
-      ? `linear-gradient(${theme.gradient.default.head}, ${theme.gradient.default.tail})`
+      ? `linear-gradient(${theme.gradient.primary.head}, ${theme.gradient.primary.tail})`
       : theme.background.color.primary};
   border-radius: 0 100px 100px 0;
   cursor: pointer;

@@ -13,8 +13,8 @@ export const IconContainer = styled.div<IconLayoutProps>`
   background: ${({ variant, theme }) =>
     variant === 'default'
       ? `linear-gradient(
-      ${theme.gradient.default.head},
-      ${theme.gradient.default.tail}
+      ${theme.gradient.primary.head},
+      ${theme.gradient.primary.tail}
     )`
       : theme.background.color.primary};
   ${({ onClick }) =>

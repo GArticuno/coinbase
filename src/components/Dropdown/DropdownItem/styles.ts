@@ -14,8 +14,8 @@ export const Item = styled.div<{ index: number; length: number }>`
   cursor: pointer;
   &:hover {
     background: linear-gradient(
-      ${({ theme }) => theme.gradient.default.head},
-      ${({ theme }) => theme.gradient.default.tail}
+      ${({ theme }) => theme.gradient.primary.head},
+      ${({ theme }) => theme.gradient.primary.tail}
     );
   }
   ${({ index, length }) => {

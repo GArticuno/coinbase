@@ -5,6 +5,7 @@ declare module 'styled-components' {
     primary: string;
     secondary: string;
     tertiary: string;
+    quartenary: string;
     success: string;
     error: string;
     contrast: string;
@@ -27,20 +28,28 @@ declare module 'styled-components' {
     bold: 700;
   }
 
+  export interface GradientProps {
+    primary: {
+      head: string;
+      tail: string;
+    };
+    secondary: {
+      head: string;
+      tail: string;
+    };
+  }
+
+  export interface BackgroundColorProps {
+    primary: string;
+    secondary: string;
+  }
+
   export interface DefaultTheme {
     background: {
-      color: {
-        primary: string;
-        secondary: string;
-      };
+      color: BackgroundColorProps;
       border: string;
     };
-    gradient: {
-      default: {
-        head: string;
-        tail: string;
-      };
-    };
+    gradient: GradientProps;
     font: {
       size: TextFontSizeProps;
       weight: TextFontWeightProps;

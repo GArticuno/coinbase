@@ -1,8 +1,20 @@
+import Image from 'next/image';
+
 import { BoxContainer } from './styles';
 import type { BoxProps } from './types';
 
-const Box = ({ children, ...props }: BoxProps) => (
-  <BoxContainer {...props}>{children}</BoxContainer>
+const Box = ({ children, isGradientBackground, ...props }: BoxProps) => (
+  <BoxContainer {...props}>
+    {children}
+    {isGradientBackground && (
+      <Image
+        src='/assets/mocks-image/wallet-background.svg'
+        alt=''
+        fill
+        className='wave-background'
+      />
+    )}
+  </BoxContainer>
 );
 
 export default Box;

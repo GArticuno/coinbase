@@ -34,6 +34,8 @@ const Card = ({
       gap={gap}
       padding={padding}
       paddingRight={paddingRight}
+      background='primary'
+      hasBorder
       {...props}
     >
       <DropdownContainer>

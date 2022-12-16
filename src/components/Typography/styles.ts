@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import type { TypographyLayoutProps } from './types';
 
-export const TypographyContainer = styled.div<TypographyLayoutProps>`
+export const TypographyContainer = styled.span<TypographyLayoutProps>`
   font-family: 'Poppins', sans-serif;
   line-height: 18px;
   color: ${({ theme, variant }) => (variant ? theme.text[variant] : theme.text.primary)};
