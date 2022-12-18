@@ -35,7 +35,7 @@ const Layout = ({ children, page }: LayoutProps) => (
     <LayoutContainer>
       <LayoutDashboard height={typeof window !== 'undefined' ? window.innerHeight : 900}>
         {menu.map((item) => (
-          <LayoutDashboardButton page={page} id={item.id}>
+          <LayoutDashboardButton page={page} id={item.id} key={item.id}>
             <Image
               src={page === item.id ? item.image.selected : item.image.default}
               alt={item.id}

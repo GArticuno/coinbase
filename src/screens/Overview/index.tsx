@@ -1,4 +1,13 @@
-import { Card, Icon, Layout, PercentBar, TitleBox, Typography, WalletCard } from 'components';
+import {
+  Card,
+  Icon,
+  Layout,
+  PercentBar,
+  StatisticsCard,
+  TitleBox,
+  Typography,
+  WalletCard,
+} from 'components';
 import Image from 'next/image';
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 import { BiRightArrowAlt } from 'react-icons/bi';
@@ -109,12 +118,12 @@ const Overview = () => {
         <ConversionContainer>
           <Grid>
             {cards.map((item) => (
-              <CardList>
+              <CardList key={item.card_title}>
                 <Typography variant='secondary' fontSize='s' fontWeight='bold'>
                   {item.card_title}
                 </Typography>
                 {item.transactions.map((transaction) => (
-                  <TitleBox>
+                  <TitleBox key={transaction.name}>
                     <Typography fontSize='s'>{transaction.name}</Typography>
                     <Typography fontSize='s'>{transaction.value}</Typography>
                   </TitleBox>
@@ -128,6 +137,7 @@ const Overview = () => {
         </ConversionContainer>
       </Card>
       <WalletCard />
+      <StatisticsCard />
     </Layout>
   );
 };
