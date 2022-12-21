@@ -5,6 +5,7 @@ import {
   PercentBar,
   StatisticsCard,
   TitleBox,
+  TransactionsCard,
   Typography,
   WalletCard,
 } from 'components';
@@ -55,7 +56,7 @@ const Overview = () => {
                 <Typography fontSize='s' variant='tertiary'>
                   22.18%
                 </Typography>
-                <AiFillCaretUp color={theme.text.tertiary} size={7} />
+                <AiFillCaretUp color={theme.colors.text.tertiary} size={7} />
               </PercentText>
               <Image
                 src='/assets/mocks-image/graph-green.svg'
@@ -75,7 +76,7 @@ const Overview = () => {
                 <Typography fontSize='s' variant='tertiary'>
                   11.8%
                 </Typography>
-                <AiFillCaretDown color={theme.text.tertiary} size={7} />
+                <AiFillCaretDown color={theme.colors.text.tertiary} size={7} />
               </PercentText>
               <Image
                 src='/assets/mocks-image/graph-green.svg'
@@ -95,7 +96,7 @@ const Overview = () => {
                 <Typography fontSize='s' variant='tertiary'>
                   11.8%
                 </Typography>
-                <AiFillCaretDown color={theme.text.tertiary} size={7} />
+                <AiFillCaretDown color={theme.colors.text.tertiary} size={7} />
               </PercentText>
               <Image
                 src='/assets/mocks-image/graph-green.svg'
@@ -132,12 +133,13 @@ const Overview = () => {
             ))}
           </Grid>
           <Icon size={44} variant='default' onClick={() => console.log('clicked')}>
-            <BiRightArrowAlt size={24} color={theme.background.color.primary} />
+            <BiRightArrowAlt size={24} color={theme.colors.background.primary} />
           </Icon>
         </ConversionContainer>
       </Card>
       <WalletCard />
       <StatisticsCard />
+      <TransactionsCard />
     </Layout>
   );
 };

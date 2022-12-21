@@ -12,10 +12,10 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   background: ${({ variant, theme }) =>
     variant === 'primary'
       ? `linear-gradient(
-      ${theme.gradient.primary.head},
-      ${theme.gradient.primary.tail}
+      ${theme.colors.gradient.primary.head},
+      ${theme.colors.gradient.primary.tail}
     )`
-      : theme.background.border};
+      : theme.colors.border};
 `;
 
 export const InputContainer = styled.div`
@@ -25,11 +25,11 @@ export const InputContainer = styled.div`
   align-items: center;
   border-radius: 100px;
   padding: 0.5rem 1rem;
-  background: ${({ theme }) => theme.background.color.primary};
+  background: ${({ theme }) => theme.colors.background.primary};
 `;
 
 export const InputStyled = styled.input`
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.colors.text.primary};
   font-size: 0.75rem;
   border: none;
   margin: 0rem 0.5rem;

@@ -2,8 +2,10 @@ import { BackgroundColorProps } from 'styled-components';
 
 export type BoxLayoutProps = {
   display?: string;
+  flex?: number;
   flexDirection?: string;
   alignItems?: string;
+  alignSelf?: string;
   justifyContent?: string;
   position?: string;
   gap?: number;

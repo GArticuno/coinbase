@@ -8,5 +8,6 @@ export { default as Layout } from './Layout';
 export { default as PercentBar } from './PercentBar';
 export { default as StatisticsCard } from './StatisticsCard';
 export { default as TitleBox } from './TitleBox';
+export { default as TransactionsCard } from './TransactionsCard';
 export { default as Typography } from './Typography';
 export { default as WalletCard } from './WalletCard';

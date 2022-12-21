@@ -43,17 +43,19 @@ declare module 'styled-components' {
     primary: string;
     secondary: string;
   }
+  export interface ColorsProps {
+    background: BackgroundColorProps;
+    border: string;
+    gradient: GradientProps;
+    text: TextVariantProps;
+  }
 
   export interface DefaultTheme {
-    background: {
-      color: BackgroundColorProps;
-      border: string;
-    };
-    gradient: GradientProps;
+    colors: ColorsProps;
+
     font: {
       size: TextFontSizeProps;
       weight: TextFontWeightProps;
     };
-    text: TextVariantProps;
   }
 }

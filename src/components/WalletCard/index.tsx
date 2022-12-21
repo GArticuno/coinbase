@@ -22,7 +22,7 @@ const WalletCard = () => (
       <Typography fontWeight='bold' variant='contrast'>
         Wallet
       </Typography>
-      <Chip variantColor='contrast' paddingHorizontal={26} paddingVertical={13}>
+      <Chip variant='text.contrast' paddingHorizontal={26} paddingVertical={13}>
         <Typography fontSize='s' variant='secondary'>
           Withdraw Funds
         </Typography>
@@ -31,7 +31,7 @@ const WalletCard = () => (
     <Container>
       <Image src='/assets/mocks-image/trophy.svg' alt='trophy' width={178} height={178} />
       <Box display='flex' flexDirection='column' maxWidth={265}>
-        <Chip variantGradient='secondary' maxWidth={115}>
+        <Chip variant='text.secondary' maxWidth={115}>
           <Typography fontSize='s' variant='contrast'>
             Total Earning
           </Typography>
@@ -49,7 +49,7 @@ const WalletCard = () => (
         </Box>
       </Box>
       <Box display='flex' flexDirection='column' maxWidth={265}>
-        <Chip variantGradient='secondary' maxWidth={115}>
+        <Chip variant='text.secondary' maxWidth={115}>
           <Typography fontSize='s' variant='contrast'>
             Balance
           </Typography>

@@ -40,8 +40,8 @@ const StatisticsCard = () => {
           >
             <defs>
               <linearGradient id='colorValue' x1='1' y1='-0.5' x2='1' y2='1.4'>
-                <stop offset='30%' stopColor={theme.gradient.primary.head} />
-                <stop offset='95%' stopColor={theme.gradient.primary.tail} />
+                <stop offset='30%' stopColor={theme.colors.gradient.primary.head} />
+                <stop offset='95%' stopColor={theme.colors.gradient.primary.tail} />
               </linearGradient>
             </defs>
 

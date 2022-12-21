@@ -30,7 +30,7 @@ export const LayoutHeaderProfile = styled.div`
 
 export const LayoutHeaderNotification = styled.div`
   cursor: pointer;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.colors.text.primary};
   transition: 0.2s;
   &:hover {
     opacity: 0.5;
@@ -43,8 +43,8 @@ export const LayoutContainer = styled.div`
 `;
 
 export const LayoutDashboard = styled.div<{ height: number }>`
-  background-color: ${({ theme }) => theme.background.color.primary}
-  border: 1px solid ${({ theme }) => theme.background.border}
+  background-color: ${({ theme }) => theme.colors.background.primary}
+  border: 1px solid ${({ theme }) => theme.colors.border}
   border-top: 0;
   height: ${({ height }) => height}px;
   width: 290px;
@@ -60,8 +60,8 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
   padding: 1rem 3.475rem;
   background: ${({ page, id, theme }) =>
     page === id
-      ? `linear-gradient(${theme.gradient.primary.head}, ${theme.gradient.primary.tail})`
-      : theme.background.color.primary};
+      ? `linear-gradient(${theme.colors.gradient.primary.head}, ${theme.colors.gradient.primary.tail})`
+      : theme.colors.background.primary};
   border-radius: 0 100px 100px 0;
   cursor: pointer;
   transition: 0.2s;
@@ -72,6 +72,6 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
 
 export const LayoutContainerChildren = styled.div`
   padding: 3rem 4rem;
-  background-color: ${({ theme }) => theme.background.color.secondary};
+  background-color: ${({ theme }) => theme.colors.background.secondary};
   width: 100%;
 `;

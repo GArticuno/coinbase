@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { GradientProps, TextVariantProps, css } from 'styled-components';
 
 import type { ChipLayoutProps } from './types';
 
@@ -7,23 +7,31 @@ export const ChipContainer = styled.div<ChipLayoutProps>`
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+  width: ${({ width }) => width}px;
   max-width: ${({ maxWidth }) => maxWidth}px;
   padding: ${({ paddingHorizontal, paddingVertical }) =>
     `${paddingVertical ?? 5}px ${paddingHorizontal ?? 14}px`};
-  ${({ theme, variantColor, variantGradient }) => {
-    if (variantColor)
+  ${({ theme, variant }) => {
+    if (variant.includes('text')) {
+      const textType = variant.split('.')[1] as keyof TextVariantProps;
       return css`
-        background: ${theme.text[variantColor]};
+        background: ${theme.colors.text[textType]};
       `;
-    if (variantGradient)
+    }
+    if (variant.includes('gradient')) {
+      const gradientType = variant.split('.')[1] as keyof GradientProps;
       return css`
         background: linear-gradient(
-          ${theme.gradient[variantGradient].head},
-          ${theme.gradient[variantGradient].tail}
+          ${theme.colors.gradient[gradientType].head},
+          ${theme.colors.gradient[gradientType].tail}
         );
       `;
+    }
     return css`
-      background: linear-gradient(${theme.gradient.primary.head}, ${theme.gradient.primary.tail});
+      background: linear-gradient(
+        ${theme.colors.gradient.primary.head},
+        ${theme.colors.gradient.primary.tail}
+      );
     `;
   }};
   ${({ onClick }) =>
