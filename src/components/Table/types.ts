@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export type HeaderTableProps = {
   name: string;
   flex: number;
