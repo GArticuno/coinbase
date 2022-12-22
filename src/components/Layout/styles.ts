@@ -13,6 +13,15 @@ export const LayoutHeader = styled.div`
   align-items: center;
 `;
 
+export const RightButton = styled.div`
+  text-align: end;
+  align-self: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+`;
+
 export const LayoutHeaderBox = styled.div`
   display: grid;
   grid-template-columns: 1fr auto auto;

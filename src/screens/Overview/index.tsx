@@ -15,36 +15,15 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 import { useTheme } from 'styled-components';
 
 import { cards } from './constants';
-import {
-  CardList,
-  ConversionContainer,
-  FlexBox,
-  GraphDesc,
-  Grid,
-  PercentText,
-  RightButton,
-} from './styles';
+import { CardList, ConversionContainer, FlexBox, GraphDesc, Grid, PercentText } from './styles';
 
 const Overview = () => {
   const theme = useTheme();
   return (
     <Layout page='overview'>
       <TitleBox>
-        <Typography fontWeight='bold' fontSize='s'>
-          User Management System Overview
-        </Typography>
-        <RightButton>
-          <Typography fontWeight='bold' fontSize='s'>
-            Accounts | RAMON RIDWAN
-          </Typography>
-          <AiFillCaretUp color='#858585' size={9} />
-        </RightButton>
-      </TitleBox>
-      <TitleBox>
         <Typography fontWeight='bold'>Overview</Typography>
-        <RightButton>
-          <Image src='/assets/icons/calendar.svg' alt='calendar' width={18.25} height={19.16} />
-        </RightButton>
+        <Image src='/assets/icons/calendar.svg' alt='calendar' width={18.25} height={19.16} />
       </TitleBox>
       <Grid>
         <Card>

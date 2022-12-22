@@ -8,15 +8,6 @@ export const FlexBox = styled.div`
   gap: 1rem;
 `;
 
-export const RightButton = styled.div`
-  text-align: end;
-  align-self: end;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.3rem;
-`;
-
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
