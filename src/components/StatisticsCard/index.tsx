@@ -1,4 +1,3 @@
-import { OverviewProps } from '@types';
 import Card from 'components/Card';
 import Typography from 'components/Typography';
 import { useState } from 'react';
@@ -7,6 +6,7 @@ import { useTheme } from 'styled-components';
 
 import { statisticsData } from './constants';
 import { Container } from './styles';
+import { OverviewProps } from './types';
 
 const StatisticsCard = ({ isOverview }: OverviewProps) => {
   const theme = useTheme();

@@ -7,3 +7,7 @@ export type TransactionDataProps = {
   return: string;
   status: number;
 };
+
+export type OverviewProps = {
+  isOverview?: boolean;
+};
