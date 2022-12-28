@@ -1,4 +1,5 @@
 import Box from 'components/Box';
+import Card from 'components/Card';
 import Chip from 'components/Chip';
 import TitleBox from 'components/TitleBox';
 import Typography from 'components/Typography';
@@ -7,7 +8,7 @@ import Image from 'next/image';
 import { Container } from './styles';
 
 const WalletCard = () => (
-  <Box
+  <Card
     isGradientBackground
     marginTop={32}
     flexDirection='column'
@@ -17,6 +18,7 @@ const WalletCard = () => (
     position='relative'
     gap={16}
     padding={32}
+    hasOptions={false}
   >
     <TitleBox>
       <Typography fontWeight='bold' variant='contrast'>
@@ -64,7 +66,7 @@ const WalletCard = () => (
         </Box>
       </Box>
     </Container>
-  </Box>
+  </Card>
 );
 
 export default WalletCard;

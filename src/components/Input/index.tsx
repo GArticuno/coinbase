@@ -4,9 +4,9 @@ import type { InputProps } from './types';
 const Input = ({ value, onChange, variant, placeholder, iconLeft, iconRight }: InputProps) => (
   <InputWrapper variant={variant}>
     <InputContainer>
-      {iconLeft}
+      {iconLeft && iconLeft}
       <InputStyled value={value} onChange={onChange} placeholder={placeholder} />
-      {iconRight}
+      {iconRight && iconRight}
     </InputContainer>
   </InputWrapper>
 );

@@ -42,6 +42,7 @@ declare module 'styled-components' {
   export interface BackgroundColorProps {
     primary: string;
     secondary: string;
+    tertiary: string;
   }
   export interface ColorsProps {
     background: BackgroundColorProps;

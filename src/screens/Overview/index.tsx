@@ -117,8 +117,8 @@ const Overview = () => {
         </ConversionContainer>
       </Card>
       <WalletCard />
-      <StatisticsCard />
-      <TransactionsCard />
+      <StatisticsCard isOverview />
+      <TransactionsCard isOverview />
     </Layout>
   );
 };

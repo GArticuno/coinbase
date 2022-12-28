@@ -1,3 +1,4 @@
+import { OverviewProps } from '@types';
 import Card from 'components/Card';
 import Chip from 'components/Chip';
 import Table from 'components/Table';
@@ -7,11 +8,13 @@ import TransactionItem from './TransactionItem';
 import { data, header } from './constants';
 import { Container } from './styles';
 
-const TransactionsCard = () => (
+const TransactionsCard = ({ isOverview }: OverviewProps) => (
   <Card flexDirection='column' marginTop={32}>
-    <Typography fontWeight='bold' variant='primary'>
-      Transactions
-    </Typography>
+    {isOverview && (
+      <Typography fontWeight='bold' variant='primary'>
+        Transactions
+      </Typography>
+    )}
     <Container>
       <Table header={header} data={data} renderItem={(item) => <TransactionItem item={item} />} />
     </Container>

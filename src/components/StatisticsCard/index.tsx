@@ -1,3 +1,4 @@
+import { OverviewProps } from '@types';
 import Card from 'components/Card';
 import Typography from 'components/Typography';
 import { useState } from 'react';
@@ -7,7 +8,7 @@ import { useTheme } from 'styled-components';
 import { statisticsData } from './constants';
 import { Container } from './styles';
 
-const StatisticsCard = () => {
+const StatisticsCard = ({ isOverview }: OverviewProps) => {
   const theme = useTheme();
   const [activeBarIndex, setActiveBarIndex] = useState(0);
   const [toolTipYPosition, setToolTipYPosition] = useState(0);
@@ -21,7 +22,8 @@ const StatisticsCard = () => {
 
   return (
     <Card marginTop={32} flexDirection='column' alignItems='flex-start' paddingRight={0}>
-      <Typography fontWeight='bold'>Statistics</Typography>
+      {isOverview && <Typography fontWeight='bold'>Statistics</Typography>}
+
       <Container>
         <Typography fontWeight='bold' fontSize='s'>
           My Own Report

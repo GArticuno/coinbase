@@ -23,6 +23,11 @@ export type BoxLayoutProps = {
   background?: keyof BackgroundColorProps;
   hasBorder?: boolean;
   maxWidth?: number;
+  minHeight?: number;
+  bottom?: number;
+  top?: number;
+  left?: number;
+  right?: number;
 };
 
 export type BoxProps = {

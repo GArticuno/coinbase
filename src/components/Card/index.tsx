@@ -8,6 +8,7 @@ import { CardProps } from './types';
 
 const Card = ({
   children,
+  hasOptions = true,
   flexDirection = 'row',
   alignItems = 'center',
   display = 'flex',
@@ -38,25 +39,28 @@ const Card = ({
       hasBorder
       {...props}
     >
-      <DropdownContainer>
-        <DropdownButton onClick={onSwitch}>
-          <BsThreeDots color='#858585' size={16} />
-        </DropdownButton>
-        <Dropdown
-          data={[
-            {
-              name: 'View',
-              onPress: () => onSwitch(),
-            },
-            {
-              name: 'Delete',
-              onPress: () => onSwitch(),
-            },
-          ]}
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-        />
-      </DropdownContainer>
+      {hasOptions && (
+        <DropdownContainer>
+          <DropdownButton onClick={onSwitch}>
+            <BsThreeDots color='#858585' size={16} />
+          </DropdownButton>
+          <Dropdown
+            data={[
+              {
+                name: 'View',
+                onPress: () => onSwitch(),
+              },
+              {
+                name: 'Delete',
+                onPress: () => onSwitch(),
+              },
+            ]}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
+        </DropdownContainer>
+      )}
+
       {children}
     </Box>
   );

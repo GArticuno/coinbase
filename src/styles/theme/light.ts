@@ -15,6 +15,7 @@ const light: DefaultTheme = {
     background: {
       primary: '#ffffff',
       secondary: '#fff9fe',
+      tertiary: '#f6f6f6',
     },
     border: '#f0f0f0',
     gradient: {

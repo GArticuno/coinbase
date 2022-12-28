@@ -1,7 +1,8 @@
+import Divider from 'components/Divider';
 import Typography from 'components/Typography';
 import { useState } from 'react';
 
-import { Container, Divider, Item } from './styles';
+import { Container, Item } from './styles';
 import { DropdownItemProps } from './types';
 
 const DropdownItem = ({ item, index, length }: DropdownItemProps) => {
@@ -23,7 +24,7 @@ const DropdownItem = ({ item, index, length }: DropdownItemProps) => {
           {item.name}
         </Typography>
       </Item>
-      {index !== length - 1 && <Divider />}
+      {index !== length - 1 && <Divider orientation='horizontal' />}
     </Container>
   );
 };

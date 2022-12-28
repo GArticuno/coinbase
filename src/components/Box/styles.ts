@@ -15,6 +15,7 @@ export const BoxContainer = styled.div<BoxLayoutProps>`
   width: 100%;
   max-width: ${({ maxWidth }) => maxWidth}px;
   height: auto;
+  min-height: ${({ minHeight }) => minHeight}px;
   background: ${({ theme, background }) => background && theme.colors.background[background]};
   ${({ theme, hasBorder }) =>
     hasBorder &&
@@ -25,7 +26,12 @@ export const BoxContainer = styled.div<BoxLayoutProps>`
       border-color: ${theme.colors.border};
     `};
 
-  padding: ${({ padding }) => (padding ? `${padding}px` : '1.2rem')};
+  top: ${({ top }) => top};
+  bottom: ${({ bottom }) => bottom};
+  left: ${({ left }) => left};
+  right: ${({ right }) => right};
+
+  padding: ${({ padding }) => padding}px;
   padding-top: ${({ paddingTop }) => paddingTop}px;
   padding-bottom: ${({ paddingBottom }) => paddingBottom}px;
   padding-left: ${({ paddingLeft }) => paddingLeft}px;

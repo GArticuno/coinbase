@@ -23,12 +23,14 @@ export const InputContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   border-radius: 100px;
   padding: 0.5rem 1rem;
   background: ${({ theme }) => theme.colors.background.primary};
 `;
 
 export const InputStyled = styled.input`
+  width: 100%;
   color: ${({ theme }) => theme.colors.text.primary};
   font-size: 0.75rem;
   border: none;
