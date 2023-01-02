@@ -1,3 +1,5 @@
+import { InputHTMLAttributes } from 'react';
+
 export type InputWrapperProps = {
   variant?: 'primary' | 'secondary';
 };
@@ -8,4 +10,5 @@ export type InputProps = {
   onChange?: () => void;
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
-} & InputWrapperProps;
+} & InputWrapperProps &
+  InputHTMLAttributes<HTMLInputElement>;

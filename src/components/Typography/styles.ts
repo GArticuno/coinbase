@@ -10,4 +10,5 @@ export const TypographyContainer = styled.span<TypographyLayoutProps>`
   font-size: ${({ theme, fontSize }) => (fontSize ? theme.font.size[fontSize] : theme.font.size.m)};
   font-weight: ${({ theme, fontWeight }) =>
     fontWeight ? theme.font.weight[fontWeight] : theme.font.weight.regular};
+  text-align: ${({ textAlign }) => textAlign};
 `;

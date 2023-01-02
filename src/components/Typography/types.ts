@@ -5,6 +5,7 @@ export type TypographyLayoutProps = {
   variant?: keyof TextVariantProps;
   fontSize?: keyof TextFontSizeProps;
   fontWeight?: keyof TextFontWeightProps;
+  textAlign?: string;
   onMouseMove?: MouseEventHandler<HTMLDivElement>;
 };
 
