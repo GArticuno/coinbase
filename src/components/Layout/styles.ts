@@ -65,6 +65,7 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
   display: flex;
   flex-direction: row;
   align-items: center;
+  min-width: 253px;
   gap: 1.2rem;
   padding: 1rem 3.475rem;
   background: ${({ page, id, theme }) =>

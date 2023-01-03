@@ -7,13 +7,19 @@ import { Bubble, ImageContainer, ProfileBox } from './styles';
 import { ProfileProps } from './types';
 
 const Profile = ({ name, image, status }: ProfileProps) => (
-  <ProfileBox display='flex' flexDirection='row' alignItems='center' justifyContent='center'>
+  <ProfileBox
+    display='flex'
+    flexDirection='row'
+    padding={20}
+    alignItems='center'
+    justifyContent='center'
+  >
     <ImageContainer>
       <Image src={image} alt='user' width={36} height={36} />
       <Bubble status={status} />
     </ImageContainer>
 
-    <Box display='flex' flexDirection='column' padding={0} paddingLeft={16}>
+    <Box display='flex' flexDirection='column' paddingLeft={16}>
       <Typography fontSize='s' fontWeight='bold'>
         {name}
       </Typography>

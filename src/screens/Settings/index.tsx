@@ -102,7 +102,7 @@ const Settings = () => {
           <CardContainer>
             <Accordion header={<Typography fontWeight='bold'>Billing Information</Typography>}>
               <AccordionContainer>
-                <Box maxWidth={308} padding={0} display='flex' alignItems='center'>
+                <Box maxWidth={308} display='flex' alignItems='center'>
                   <Typography fontSize='s' textAlign='center'>
                     Fill in the bank information into which you would want your transaction return
                     and bonuses.

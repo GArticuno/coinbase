@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import type { TypographyLayoutProps } from './types';
 
 export const TypographyContainer = styled.span<TypographyLayoutProps>`
+  display: ${({ display }) => display};
+  flex: ${({ flex }) => flex};
+  flex-direction: ${({ flexDirection }) => flexDirection};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  align-items: ${({ alignItems }) => alignItems};
   font-family: 'Poppins', sans-serif;
   line-height: 18px;
   color: ${({ theme, variant }) =>

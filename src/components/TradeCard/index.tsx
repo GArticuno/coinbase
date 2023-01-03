@@ -17,13 +17,12 @@ const TradeCard = () => {
       display='flex'
       flexDirection='row'
       marginTop={32}
-      padding={0}
       hasBorder
       background='primary'
       minHeight={686}
     >
-      <Box display='flex' flexDirection='row' padding={0}>
-        <Box padding={0} maxWidth={262} position='relative'>
+      <Box display='flex' flexDirection='row'>
+        <Box maxWidth={262} position='relative'>
           <Profile name='Ramon Ridwan' status={1} image='/assets/mocks-image/user-icon.png' />
           <Divider orientation='horizontal' />
           {traders.map((item) => (
@@ -35,6 +34,7 @@ const TradeCard = () => {
             justifyContent='center'
             position='absolute'
             bottom={0}
+            padding={20}
           >
             <Chip
               variant='gradient.primary.head'
@@ -49,7 +49,7 @@ const TradeCard = () => {
           </Box>
         </Box>
         <Divider orientation='vertical' />
-        <Box padding={0} position='relative'>
+        <Box position='relative'>
           <Box
             display='flex'
             flexDirection='column'
@@ -57,8 +57,15 @@ const TradeCard = () => {
             justifyContent='center'
             position='absolute'
             bottom={0}
+            padding={20}
           >
-            <Box display='flex' flexDirection='column' alignItems='end' justifyContent='center'>
+            <Box
+              display='flex'
+              flexDirection='column'
+              padding={20}
+              alignItems='end'
+              justifyContent='center'
+            >
               <MessageBox>
                 <Message>
                   <Typography fontSize='s'>
@@ -79,7 +86,7 @@ const TradeCard = () => {
                   </MessageSend>
                 </Message>
               </MessageBox>
-              <Box display='flex' flexDirection='row' alignItems='center' gap={16}>
+              <Box display='flex' padding={20} flexDirection='row' alignItems='center' gap={16}>
                 <Typography fontSize='s' fontWeight='bold' variant='quartenary'>
                   UNREAD
                 </Typography>

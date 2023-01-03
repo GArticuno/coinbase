@@ -60,17 +60,26 @@ const Layout = ({ children, page }: LayoutProps) => {
               </Typography>
             </LayoutDashboardButton>
           ))}
-          <Box display='flex' flexDirection='column' alignItems='center' marginTop={48}>
+
+          <Box marginTop={84}>
             <LayoutDashboardButton page={page} id='referral' onClick={() => push('referral')}>
-              <Typography fontSize='s' variant={page === 'referral' ? 'contrast' : 'primary'}>
-                Referral
-              </Typography>
+              <Box display='flex' justifyContent='center'>
+                <Typography
+                  fontSize='s'
+                  variant={page === 'referral' ? 'contrast' : 'primary'}
+                  textAlign='center'
+                >
+                  Referral
+                </Typography>
+              </Box>
             </LayoutDashboardButton>
 
             <LayoutDashboardButton page={page} id='logout' onClick={() => push('logout')}>
-              <Typography fontSize='s' variant={page === 'logout' ? 'contrast' : 'primary'}>
-                Logout
-              </Typography>
+              <Box display='flex' justifyContent='center'>
+                <Typography fontSize='s' variant={page === 'logout' ? 'contrast' : 'primary'}>
+                  Logout
+                </Typography>
+              </Box>
             </LayoutDashboardButton>
           </Box>
         </LayoutDashboard>

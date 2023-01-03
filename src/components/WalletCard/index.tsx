@@ -32,13 +32,13 @@ const WalletCard = () => (
     </TitleBox>
     <Container>
       <Image src='/assets/mocks-image/trophy.svg' alt='trophy' width={178} height={178} />
-      <Box display='flex' flexDirection='column' maxWidth={265}>
+      <Box display='flex' flexDirection='column' padding={20} maxWidth={265}>
         <Chip variant='text.secondary' maxWidth={115}>
           <Typography fontSize='s' variant='contrast'>
             Total Earning
           </Typography>
         </Chip>
-        <Box display='flex' flexDirection='column' gap={18} marginRight={36}>
+        <Box display='flex' flexDirection='column' padding={20} gap={18} marginRight={36}>
           <Typography fontSize='xl' variant='contrast'>
             #120000.00
           </Typography>
@@ -50,13 +50,13 @@ const WalletCard = () => (
           </Typography>
         </Box>
       </Box>
-      <Box display='flex' flexDirection='column' maxWidth={265}>
+      <Box display='flex' flexDirection='column' padding={20} maxWidth={265}>
         <Chip variant='text.secondary' maxWidth={115}>
           <Typography fontSize='s' variant='contrast'>
             Balance
           </Typography>
         </Chip>
-        <Box display='flex' flexDirection='column' gap={18} marginRight={36}>
+        <Box display='flex' flexDirection='column' padding={20} gap={18} marginRight={36}>
           <Typography fontSize='xl' variant='contrast'>
             #30000.00
           </Typography>
