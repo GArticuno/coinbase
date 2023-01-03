@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project in progress based on this [prototype](https://www.figma.com/file/3ub7YonFcdHjGcAigqmwhN/CoinBase-Web-Dashboard?node-id=0%3A1&t=f2rAqACxV1pbZJWf-1)
 
 ## Getting Started
 
