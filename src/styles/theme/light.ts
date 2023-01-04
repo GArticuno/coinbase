@@ -12,6 +12,10 @@ const light: DefaultTheme = {
       contrast: '#ffffff',
       percent: '#faa9c6',
     },
+    calendar: {
+      primary: '#5C5C5C',
+      secondary: '#B3B2B2',
+    },
     background: {
       primary: '#ffffff',
       secondary: '#fff9fe',

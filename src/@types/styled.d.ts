@@ -39,6 +39,11 @@ declare module 'styled-components' {
     };
   }
 
+  export interface CalendarProps {
+    primary: string;
+    secondary: string;
+  }
+
   export interface BackgroundColorProps {
     primary: string;
     secondary: string;
@@ -49,6 +54,7 @@ declare module 'styled-components' {
     border: string;
     gradient: GradientProps;
     text: TextVariantProps;
+    calendar: CalendarProps;
   }
 
   export interface DefaultTheme {

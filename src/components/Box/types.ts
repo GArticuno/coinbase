@@ -1,3 +1,4 @@
+import { HTMLAttributes } from 'react';
 import { BackgroundColorProps } from 'styled-components';
 
 export type BoxLayoutProps = {
@@ -32,4 +33,5 @@ export type BoxLayoutProps = {
 
 export type BoxProps = {
   children?: React.ReactNode | React.ReactNode[];
-} & BoxLayoutProps;
+} & BoxLayoutProps &
+  HTMLAttributes<HTMLDivElement>;

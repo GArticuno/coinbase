@@ -1,4 +1,5 @@
 import {
+  Calendar,
   Card,
   Icon,
   Layout,
@@ -23,7 +24,7 @@ const Overview = () => {
     <Layout page='overview'>
       <TitleBox>
         <Typography fontWeight='bold'>Overview</Typography>
-        <Image src='/assets/icons/calendar.svg' alt='calendar' width={18.25} height={19.16} />
+        <Calendar />
       </TitleBox>
       <Grid>
         <Card>

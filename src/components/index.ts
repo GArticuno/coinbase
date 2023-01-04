@@ -1,5 +1,6 @@
 export { default as Accordion } from './Accordion';
 export { default as Box } from './Box';
+export { default as Calendar } from './Calendar';
 export { default as Card } from './Card';
 export { default as Chip } from './Chip';
 export { default as Divider } from './Divider';
