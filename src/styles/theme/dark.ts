@@ -1,9 +1,9 @@
 import { DefaultTheme } from 'styled-components';
 
-const light: DefaultTheme = {
+const dark: DefaultTheme = {
   colors: {
     text: {
-      primary: '#858585',
+      primary: '#ffffff',
       secondary: '#fd749b',
       tertiary: '#1cd1a1',
       quartenary: '#B327F5',
@@ -18,9 +18,9 @@ const light: DefaultTheme = {
       secondary: '#B3B2B2',
     },
     background: {
-      primary: '#ffffff',
-      secondary: '#fff9fe',
-      tertiary: '#f6f6f6',
+      primary: '#1E0338',
+      secondary: '#1E0338',
+      tertiary: '#1E0338',
     },
     border: '#f0f0f0',
     gradient: {
@@ -53,4 +53,4 @@ const light: DefaultTheme = {
   },
 };
 
-export default light;
+export default dark;

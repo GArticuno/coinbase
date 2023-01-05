@@ -8,6 +8,7 @@ declare module 'styled-components' {
     quartenary: string;
     success: string;
     error: string;
+    warn: string;
     contrast: string;
     percent: string;
   }

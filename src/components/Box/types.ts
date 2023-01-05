@@ -29,6 +29,7 @@ export type BoxLayoutProps = {
   top?: number;
   left?: number;
   right?: number;
+  cursor?: string;
 };
 
 export type BoxProps = {

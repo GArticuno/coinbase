@@ -1,16 +1,20 @@
 import styled from 'styled-components';
 
 export const LayoutHeader = styled.div`
-  background-color: #ffffff;
-  border: 1px solid #f0f0f0;
+  background-color: ${({ theme }) => theme.colors.background.primary};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
   width: 100%;
   padding: 1rem 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 `;
 
 export const RightButton = styled.div`
@@ -24,7 +28,7 @@ export const RightButton = styled.div`
 
 export const LayoutHeaderBox = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto;
   gap: 3.5rem;
   align-items: center;
 `;
@@ -37,13 +41,26 @@ export const LayoutHeaderProfile = styled.div`
   cursor: pointer;
 `;
 
-export const LayoutHeaderNotification = styled.div`
+export const HeaderButton = styled.div`
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.text.primary};
   transition: 0.2s;
   &:hover {
     opacity: 0.5;
   }
+`;
+
+export const DropdownContainer = styled.div<{ isOpen: boolean }>`
+  position: absolute;
+  margin-top: 1rem;
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  flex-direction: column;
+  z-index: 2;
+  top: 1.5rem;
+  right: 0;
+`;
+
+export const LayoutHeaderNotification = styled.div`
+  position: relative;
 `;
 
 export const LayoutContainer = styled.div`
@@ -52,13 +69,15 @@ export const LayoutContainer = styled.div`
 `;
 
 export const LayoutDashboard = styled.div<{ height: number }>`
-  background-color: ${({ theme }) => theme.colors.background.primary}
-  border: 1px solid ${({ theme }) => theme.colors.border}
-  border-top: 0;
+  background-color: ${({ theme }) => theme.colors.background.primary};
   height: ${({ height }) => height}px;
-  width: 290px;
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
+  width: 250px;
   padding: 2.65rem 0rem;
+  padding-top: 102px;
   padding-right: 1rem;
+  position: fixed;
+  z-index: 2;
 `;
 
 export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
@@ -81,7 +100,9 @@ export const LayoutDashboardButton = styled.div<{ page: string; id: string }>`
 `;
 
 export const LayoutContainerChildren = styled.div`
-  padding: 3rem 4rem;
+  padding: 3rem 3rem;
   background-color: ${({ theme }) => theme.colors.background.secondary};
   width: 100%;
+  padding-top: 110px;
+  padding-left: 300px;
 `;

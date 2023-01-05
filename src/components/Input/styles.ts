@@ -30,6 +30,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputStyled = styled.input`
+  background: ${({ theme }) => theme.colors.background.primary};
   width: 100%;
   color: ${({ theme }) => theme.colors.text.primary};
   font-size: 0.75rem;

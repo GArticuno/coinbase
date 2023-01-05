@@ -44,6 +44,8 @@ export const BoxContainer = styled.div<BoxLayoutProps>`
   margin-right: ${({ marginRight }) => marginRight}px;
   z-index: 1;
 
+  cursor: ${({ cursor }) => cursor};
+
   .wave-background {
     width: 100vw;
     object-fit: cover;

@@ -23,6 +23,7 @@ export const Message = styled.div`
   padding: 1.2rem 1rem;
 
   background: ${({ theme }) => theme.colors.background.tertiary};
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 10px;
   max-width: 443px;
 `;
