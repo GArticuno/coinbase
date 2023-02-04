@@ -1,3 +1,4 @@
+# CoinBase
 Project based on this [prototype](https://www.figma.com/file/3ub7YonFcdHjGcAigqmwhN/CoinBase-Web-Dashboard?node-id=0%3A1&t=f2rAqACxV1pbZJWf-1)
 
 ## User Dashboard Light theme
